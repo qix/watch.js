@@ -1,6 +1,6 @@
 $(function() {
-	$('.if').each(function() {
-		var div = $(this); // div
+  $('.if').each(function() {
+    var div = $(this); // div
     var full = div.data('if');
     
     var parts = [];
@@ -32,7 +32,7 @@ $(function() {
         parts[i]['fn'](watch.get(parts[i]['watch']));
       }
     });
-	});
+  });
 
   function toggle($el, show) {
     if (show===undefined) show = true;
